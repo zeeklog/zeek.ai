@@ -7,12 +7,12 @@
 通过模块化的 Monorepo 架构，提供轻量级、可扩展且高效的桌面体验，
 助力 AI 驱动的日常工作流程。
 
-[![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek-desktop?style=social)](https://github.com/zeeklog/zeek-desktop/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek-desktop?style=social)](https://github.com/zeeklog/zeek-desktop/network)
-[![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/issues)
-[![License](https://img.shields.io/github/license/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/releases)
-[![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek-desktop/build.yml)](https://github.com/zeeklog/zeek-desktop/actions)
+[![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/network)
+[![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
+[![License](https://img.shields.io/github/license/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
+[![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek.ai/build.yml)](https://github.com/zeeklog/zeek.ai/actions)
 ![Zeek Desktop Banner](doc/ai-app-set.png)
 
 
@@ -69,10 +69,10 @@ Zeek Desktop 在 `packages/` 下采用 **Monorepo** 架构，以实现模块化�
 ### 安装
 ```bash
 # 克隆仓库
-git clone https://github.com/zeeklog/zeek-desktop.git
+git clone https://github.com/zeeklog/zeek.ai.git
 
 # 进入项目目录
-cd zeek-desktop
+cd zeek.ai
 # Install dependencies
 npm install
 # or you can use pnpm install
@@ -116,13 +116,13 @@ npm run build:linux
 
 # 📦 发布
 
-- **最新版本**: [v0.0.1](https://github.com/zeeklog/zeek-desktop/releases/tag/v0.0.1) (2025年4月)
+- **最新版本**: [v0.0.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.0.1) (2025年4月)
 - **支持格式**:
   - **Windows**: NSIS 安装包
   - **macOS**: DMG (已签名)
   - **Linux**: DEB (系统工具类别)
 
-通过 `electron-updater` 启用自动更新。查看 [releases](https://github.com/zeeklog/zeek-desktop/releases) 获取更新日志和二进制文件。
+通过 `electron-updater` 启用自动更新。查看 [releases](https://github.com/zeeklog/zeek.ai/releases) 获取更新日志和二进制文件。
 
 ---
 
@@ -134,25 +134,25 @@ npm run build:linux
 2. 创建功能分支 (`git checkout -b feature/xyz`)
 3. 提交更改 (`git commit -m "Add XYZ"`)
 4. 推送到你的 Fork (`git push origin feature/xyz`)
-5. 提交 [Pull Request](https://github.com/zeeklog/zeek-desktop/pulls)
+5. 提交 [Pull Request](https://github.com/zeeklog/zeek.ai/pulls)
 
-- **问题**: [报告 Bug](https://github.com/zeeklog/zeek-desktop/issues/new)
-- **指南**: 查看 [CONTRIBUTING.md](https://github.com/zeeklog/zeek-desktop/blob/main/CONTRIBUTING.md)
+- **问题**: [报告 Bug](https://github.com/zeeklog/zeek.ai/issues/new)
+- **指南**: 查看 [CONTRIBUTING.md](https://github.com/zeeklog/zeek.ai/blob/main/CONTRIBUTING.md)
 
 ---
 
 # 🌐 社区
 
 - **网站**: [zeeklog.com](https://zeeklog.com)
-- **支持**: [GitHub Issues](https://github.com/zeeklog/zeek-desktop/issues)
+- **支持**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **邮箱**: [001@zeeklog.com](mailto:001@zeeklog.com)
-- **讨论**: [GitHub Discussions](https://github.com/zeeklog/zeek-desktop/discussions)
+- **讨论**: [GitHub Discussions](https://github.com/zeeklog/zeek.ai/discussions)
 
 ---
 
 # 📄 许可证
 
-Zeek Desktop 采用 [MIT 许可证](https://github.com/zeeklog/zeek-desktop/blob/main/LICENSE) 开源，欢迎自由使用、修改和分发！
+Zeek Desktop 采用 [MIT 许可证](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE) 开源，欢迎自由使用、修改和分发！
 
 ---
 
