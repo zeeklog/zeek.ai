@@ -1,4 +1,4 @@
-# Zeek Desktop
+# Zeek.ai Desktop App
 
 
 **Zeek Desktop** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
