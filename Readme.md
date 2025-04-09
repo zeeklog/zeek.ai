@@ -4,11 +4,11 @@
 
 **Zeek Desktop** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
 
-[![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek-desktop?style=social)](https://github.com/zeeklog/zeek-desktop/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek-desktop?style=social)](https://github.com/zeeklog/zeek-desktop/network)
-[![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/issues)
-[![License](https://img.shields.io/github/license/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/network)
+[![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
+[![License](https://img.shields.io/github/license/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
 
 
 ![Zeek Desktop Banner](doc/ai-app-set.png)
@@ -22,7 +22,7 @@
 - **Version**: 0.0.1
 - **Website**: [zeeklog.com](https://zeeklog.com)
 - **Author**: Neo ([001@zeeklog.com](mailto:001@zeeklog.com)) | [zeeklog.com](https://zeeklog.com)
-- **Repository**: [github.com/zeeklog/zeek-desktop](https://github.com/zeeklog/zeek-desktop)
+- **Repository**: [github.com/zeeklog/zeek-desktop](https://github.com/zeeklog/zeek.ai)
 
 Zeek Desktop empowers users with a fast, modular AI browser experience, built for developers, researchers, and power users.
 
