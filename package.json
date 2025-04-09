@@ -88,6 +88,7 @@
       "icon": "assets/logo.icns",
       "target": ["dmg"],
       "category": "public.app-category.utilities",
+      "identity": "Neo Caffrey (2CGLC5GKX4)",
       "hardenedRuntime": false
     },
     "linux": {
