@@ -1,0 +1,59 @@
+body {
+  font-family: Inter, system-ui, Avenir, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+a {
+  color: var(--ep-color-primary);
+}
+p {
+  margin: 0;
+}
+code {
+  border-radius: 2px;
+  padding: 2px 4px;
+  background-color: var(--ep-color-primary-light-9);
+  color: var(--ep-color-primary);
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13, 148, 136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.bg-filter-glass {
+  background: rgba(255, 255, 255, 0.2); /* 半透明白色背景 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  // border-radius: 12px; /* 圆角 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+.hoverScale {
+  transition: transform 0.3s, box-shadow 0.5s; /* 动画效果 */
+  &:hover {
+    transform: scale(1.05); /* 悬停时放大 */
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+.ellipsis {
+  text-overflow: ellipsis;   // 超长文本显示省略号
+  white-space: nowrap;       /* 不允许换行 */
+  overflow: hidden;          /* 隐藏超出的部分 */
+}
+.ep-menu-item * {
+  vertical-align: middle !important;
+}

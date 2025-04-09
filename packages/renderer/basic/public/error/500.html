@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加载失败</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      //box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .icon {
+      font-size: 80px;
+      color: #e74c3c;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #e74c3c;
+    }
+    .message {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+      word-wrap: break-word;
+    }
+    .details {
+      font-size: 14px;
+      color: #888;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+      display: none; /* 默认隐藏，点击时显示 */
+    }
+    .toggle-details {
+      background: none;
+      border: none;
+      color: #3498db;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    .toggle-details:hover {
+      color: #2980b9;
+    }
+
+    /* 动画 */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="icon">⚠️</div>
+  <div class="title">加载失败</div>
+  <div class="message" id="error-message">未知错误</div>
+  <div class="tips">如需访问海外AI站点，请启用科学上网后使用。</div>
+  <div class="details" id="error-details"></div>
+  <button class="toggle-details" id="toggle-details" onclick="toggleDetails()">查看详情</button>
+</div>
+
+<script>
+  // 从 URL 参数获取错误信息
+  const params = new URLSearchParams(window.location.search);
+  const errorMessage = params.get('error') || '未知错误';
+  document.getElementById('error-message').textContent = errorMessage;
+
+  // 如果有详细错误信息，可以通过参数传递（可选）
+  const errorDetails = params.get('details') || errorMessage;
+  document.getElementById('error-details').textContent = errorDetails;
+
+  // 切换错误详情的显示
+  function toggleDetails() {
+    const details = document.getElementById('error-details');
+    const button = document.getElementById('toggle-details');
+    if (details.style.display === 'block') {
+      details.style.display = 'none';
+      button.textContent = '查看详情';
+    } else {
+      details.style.display = 'block';
+      button.textContent = '隐藏详情';
+    }
+  }
+</script>
+</body>
+</html>

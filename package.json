@@ -1,0 +1,108 @@
+{
+  "name": "ai.zeeklog.com",
+  "description": "An ai browser build with Electron & Vite",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "homepage": "https://zeeklog.com",
+  "author": {
+    "email": "001@zeeklog.com",
+    "name": "Neo",
+    "url": "https://zeeklog.com"
+  },
+  "main": "packages/entry-point.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "compile": "npm run build && electron-builder build --config electron-builder.mjs",
+    "test": "npx playwright test ./tests/e2e.spec.ts",
+    "start:main": "node packages/dev-mode.js",
+    "start:render": "cd packages/renderer && npm run dev",
+    "vite": "node packages/dev-mode.js",
+    "typecheck": "npm run typecheck -ws --if-present",
+    "create-renderer": "cd packages && npm create vite@latest renderer",
+    "integrate-renderer": "npm start --workspace @vite-electron-builder/integrate-renderer",
+    "integrate": "npm install --legacy-peer-deps && cd packages/renderer && npm run build && npm run integrate-renderer",
+    "build": "npm run build -ws --if-present",
+    "build:unpack": "npm run build && electron-builder --dir",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux"
+  },
+  "devDependencies": {
+    "@npmcli/map-workspaces": "4.0.2",
+    "@playwright/test": "1.49.0",
+    "@types/node": "22.10.2",
+    "concurrently": "^9.1.2",
+    "electron": "33.2.1",
+    "electron-builder": "26.0.0-alpha.8",
+    "glob": "11.0.0",
+    "playwright": "1.49.0",
+    "sass-embedded": "^1.85.1",
+    "unocss": "66.1.0-beta.3",
+    "unplugin-vue-components": "^28.4.1",
+    "unplugin-vue-router": "^0.11.2"
+  },
+  "dependencies": {
+    "@vite-electron-builder/preload": "*",
+    "@vite-electron-builder/renderer": "*",
+    "@vite-electron-builder/main": "*",
+    "electron-log": "^5.3.2",
+    "electron-store": "^10.0.1",
+    "electron-updater": "6.3.9",
+    "fsid": "^1.0.4",
+    "lodash": "^4.17.21",
+    "vite": "^6.0.11"
+  },
+  "build": {
+    "extraResources": [
+      {
+        "from": "packages/main/assets/",
+        "to": "assets/",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "./assets/",
+        "to": "assets/",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "appId": "com.zeeklog.ai",
+    "productName": "极客ai",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/logo.png"
+    },
+    "mac": {
+      "icon": "assets/logo.icns",
+      "target": ["dmg"],
+      "category": "public.app-category.utilities",
+      "hardenedRuntime": false
+    },
+    "linux": {
+      "target": "deb",
+      "icon": "assets/logo.png",
+      "category": "System",
+      "compression": "normal"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "unicode": true,
+      "language": "2052",
+      "runAfterFinish": true,
+      "perMachine": true
+    }
+  }
+}
