@@ -8,7 +8,8 @@
 [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/issues)
 [![License](https://img.shields.io/github/license/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/releases)
-[![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek-desktop/build.yml)](https://github.com/zeeklog/zeek-desktop/actions)
+
+
 ![Zeek Desktop Banner](doc/ai-app-set.png)
 
 
