@@ -16,7 +16,7 @@
 
 ## 📊 Key Metrics
 
-- **Downloads**: [Coming Soon](#releases)
+- **Downloads**: [releases](https://github.com/zeeklog/zeek.ai/releases)
 - **Open Issues**: [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
 - **Pull Requests**: [![GitHub PRs](https://img.shields.io/github/issues-pr/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/pulls)
 - **Last Commit**: [![GitHub Last Commit](https://img.shields.io/github/last-commit/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/commits/main)
