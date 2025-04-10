@@ -8,7 +8,7 @@ Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压�
 [中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
 
 
-**Zeek Desktop** 是一款基于 **Electron** 和 **Vite** 
+**Zeek.ai** 是一款基于 **Electron** 和 **Vite** 
 打造的跨平台(支持 Windows、macOS 和 Linux) AI 浏览器。
 它集成了 **SearXNG AI 搜索**、开发工具集合、
 市面上最流行的 AI 工具门户，以及代码编写和桌面快捷工具等功能，
@@ -21,7 +21,7 @@ Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压�
 [![License](https://img.shields.io/github/license/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
 [![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek.ai/build.yml)](https://github.com/zeeklog/zeek.ai/actions)
-![Zeek Desktop Banner](doc/ai-app-set.png)
+![Zeek.ai Banner](doc/ai-app-set.png)
 
 
 
@@ -39,7 +39,7 @@ Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压�
 
 ## 📂 项目结构
 
-Zeek Desktop 在 `packages/` 下采用 **Monorepo** 架构，以实现模块化和可扩展性：
+Zeek.ai 在 `packages/` 下采用 **Monorepo** 架构，以实现模块化和可扩展性：
 
 | 模块                    | 描述                                | 技术栈                      |
 |-------------------------|-----------------------------------|-----------------------------|
@@ -143,9 +143,7 @@ npm run build:linux
 3. 提交更改 (`git commit -m "Add XYZ"`)
 4. 推送到你的 Fork (`git push origin feature/xyz`)
 5. 提交 [Pull Request](https://github.com/zeeklog/zeek.ai/pulls)
-
-- **问题**: [报告 Bug](https://github.com/zeeklog/zeek.ai/issues/new)
-- **指南**: 查看 [CONTRIBUTING.md](https://github.com/zeeklog/zeek.ai/blob/main/CONTRIBUTING.md)
+6. Issues [报告 Bug](https://github.com/zeeklog/zeek.ai/issues/new)
 
 ---
 
@@ -154,13 +152,12 @@ npm run build:linux
 - **网站**: [zeeklog.com](https://zeeklog.com)
 - **支持**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **邮箱**: [001@zeeklog.com](mailto:001@zeeklog.com)
-- **讨论**: [GitHub Discussions](https://github.com/zeeklog/zeek.ai/discussions)
 
 ---
 
 # 📄 许可证
 
-Zeek Desktop 采用 [MIT 许可证](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE) 开源，欢迎自由使用、修改和分发！
+ 采用 [MIT 许可证](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE) 开源，欢迎自由使用、修改和分发！
 
 ---
 

@@ -4,7 +4,7 @@
 [中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
 
 
-**Zeek Desktop** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
+**Zeek.ai** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
 
 [![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/network)
@@ -13,7 +13,7 @@
 [![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
 
 
-![Zeek Desktop Banner](doc/ai-app-set.png)
+![Zeek.ai Banner](doc/ai-app-set.png)
 
 
 ## 📊 Key Metrics
@@ -40,7 +40,7 @@
 
 ## 📂 Project Structure
 
-Zeek Desktop uses a **Monorepo** architecture under `packages/` for modularity and scalability:
+Zeek.ai uses a **Monorepo** architecture under `packages/` for modularity and scalability:
 
 | Module                  | Description                                                                 | Tech Stack                  |
 |-------------------------|-----------------------------------------------------------------------------|-----------------------------|
@@ -142,9 +142,8 @@ We welcome contributions! Here’s how to get involved:
 3. Commit changes (`git commit -m "Add XYZ"`)
 4. Push to your fork (`git push origin feature/xyz`)
 5. Open a [Pull Request](https://github.com/zeeklog/zeek.ai/pulls)
+6. Issues: [Report a bug](https://github.com/zeeklog/zeek.ai/issues/new)
 
-- **Issues**: [Report a bug](https://github.com/zeeklog/zeek.ai/issues/new)
-- **Guidelines**: See [CONTRIBUTING.md](https://github.com/zeeklog/zeek.ai/blob/main/CONTRIBUTING.md)
 
 ---
 
@@ -153,13 +152,12 @@ We welcome contributions! Here’s how to get involved:
 - **Website**: [zeeklog.com](https://zeeklog.com)
 - **Support**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **Email**: [001@zeeklog.com](mailto:001@zeeklog.com)
-- **Discussions**: [GitHub Discussions](https://github.com/zeeklog/zeek.ai/discussions)
 
 ---
 
 # 📄 License
 
-Zeek Desktop is licensed under the [MIT License](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE). Feel free to use, modify, and distribute!
+Zeek.ai is licensed under the [MIT License](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE). Feel free to use, modify, and distribute!
 
 ---
 
