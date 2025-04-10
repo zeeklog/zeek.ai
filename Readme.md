@@ -14,20 +14,6 @@
 ![Zeek Desktop Banner](doc/ai-app-set.png)
 
 
----
-
-## 🚀 Project Overview
-
-- **Name**: Zeek Desktop
-- **Version**: 0.0.1
-- **Website**: [zeeklog.com](https://zeeklog.com)
-- **Author**: Neo ([001@zeeklog.com](mailto:001@zeeklog.com)) | [zeeklog.com](https://zeeklog.com)
-- **Repository**: [github.com/zeeklog/zeek.ai](https://github.com/zeeklog/zeek.ai)
-
-Zeek Desktop empowers users with a fast, modular AI browser experience, built for developers, researchers, and power users.
-
----
-
 ## 📊 Key Metrics
 
 - **Downloads**: [Coming Soon](#releases)
@@ -135,7 +121,7 @@ npm run build:linux
 | `npm run integrate`    | Integrate renderer into Electron app |
 # 📦 Releases
 
-- **Latest**: [v0.0.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.0.1) (April 2025)
+- **Latest**: [v0.1.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.1.1) (April 2025)
 - **Supported Formats**:
   - **Windows**: NSIS Installer
   - **macOS**: DMG (Signed)
