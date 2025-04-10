@@ -1,6 +1,12 @@
 # 🚀 Zeek Desktop
+`
+Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压迫行径】
+`
 
-[中文]([doc/ai-app-set.png](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md)) ｜ [English]([doc/ai-app-set.png](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md))
+
+[中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
+
+
 **Zeek Desktop** 是一款基于 **Electron** 和 **Vite** 
 打造的跨平台(支持 Windows、macOS 和 Linux) AI 浏览器。
 它集成了 **SearXNG AI 搜索**、开发工具集合、
@@ -117,7 +123,7 @@ npm run build:linux
 
 # 📦 发布
 
-- **最新版本**: [v0.0.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.0.1) (2025年4月)
+- **最新版本**: [v0.1.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.1.1) (2025年4月)
 - **支持格式**:
   - **Windows**: NSIS 安装包
   - **macOS**: DMG (已签名)
