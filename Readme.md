@@ -22,7 +22,7 @@
 - **Version**: 0.0.1
 - **Website**: [zeeklog.com](https://zeeklog.com)
 - **Author**: Neo ([001@zeeklog.com](mailto:001@zeeklog.com)) | [zeeklog.com](https://zeeklog.com)
-- **Repository**: [github.com/zeeklog/zeek-desktop](https://github.com/zeeklog/zeek.ai)
+- **Repository**: [github.com/zeeklog/zeek.ai](https://github.com/zeeklog/zeek.ai)
 
 Zeek Desktop empowers users with a fast, modular AI browser experience, built for developers, researchers, and power users.
 
@@ -31,10 +31,10 @@ Zeek Desktop empowers users with a fast, modular AI browser experience, built fo
 ## 📊 Key Metrics
 
 - **Downloads**: [Coming Soon](#releases)
-- **Open Issues**: [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/issues)
-- **Pull Requests**: [![GitHub PRs](https://img.shields.io/github/issues-pr/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/pulls)
-- **Last Commit**: [![GitHub Last Commit](https://img.shields.io/github/last-commit/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/commits/main)
-- **Contributors**: [![GitHub Contributors](https://img.shields.io/github/contributors/zeeklog/zeek-desktop)](https://github.com/zeeklog/zeek-desktop/graphs/contributors)
+- **Open Issues**: [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
+- **Pull Requests**: [![GitHub PRs](https://img.shields.io/github/issues-pr/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/pulls)
+- **Last Commit**: [![GitHub Last Commit](https://img.shields.io/github/last-commit/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/commits/main)
+- **Contributors**: [![GitHub Contributors](https://img.shields.io/github/contributors/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/graphs/contributors)
 
 ---
 
@@ -89,10 +89,10 @@ Zeek Desktop uses a **Monorepo** architecture under `packages/` for modularity a
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/zeeklog/zeek-desktop.git
+git clone https://github.com/zeeklog/zeek.ai.git
 
 # Navigate to the project
-cd zeek-desktop
+cd zeek.ai
 
 # Install dependencies
 npm install --legacy-peer-deps
@@ -135,13 +135,13 @@ npm run build:linux
 | `npm run integrate`    | Integrate renderer into Electron app |
 # 📦 Releases
 
-- **Latest**: [v0.0.1](https://github.com/zeeklog/zeek-desktop/releases/tag/v0.0.1) (April 2025)
+- **Latest**: [v0.0.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.0.1) (April 2025)
 - **Supported Formats**:
   - **Windows**: NSIS Installer
   - **macOS**: DMG (Signed)
   - **Linux**: DEB (System Tools Category)
 
-Auto-updates are enabled via `electron-updater`. Check [releases](https://github.com/zeeklog/zeek-desktop/releases) for changelogs and binaries.
+Auto-updates are enabled via `electron-updater`. Check [releases](https://github.com/zeeklog/zeek.ai/releases) for changelogs and binaries.
 
 ---
 
@@ -153,25 +153,25 @@ We welcome contributions! Here’s how to get involved:
 2. Create a feature branch (`git checkout -b feature/xyz`)
 3. Commit changes (`git commit -m "Add XYZ"`)
 4. Push to your fork (`git push origin feature/xyz`)
-5. Open a [Pull Request](https://github.com/zeeklog/zeek-desktop/pulls)
+5. Open a [Pull Request](https://github.com/zeeklog/zeek.ai/pulls)
 
-- **Issues**: [Report a bug](https://github.com/zeeklog/zeek-desktop/issues/new)
-- **Guidelines**: See [CONTRIBUTING.md](https://github.com/zeeklog/zeek-desktop/blob/main/CONTRIBUTING.md)
+- **Issues**: [Report a bug](https://github.com/zeeklog/zeek.ai/issues/new)
+- **Guidelines**: See [CONTRIBUTING.md](https://github.com/zeeklog/zeek.ai/blob/main/CONTRIBUTING.md)
 
 ---
 
 # 🌐 Community
 
 - **Website**: [zeeklog.com](https://zeeklog.com)
-- **Support**: [GitHub Issues](https://github.com/zeeklog/zeek-desktop/issues)
+- **Support**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **Email**: [001@zeeklog.com](mailto:001@zeeklog.com)
-- **Discussions**: [GitHub Discussions](https://github.com/zeeklog/zeek-desktop/discussions)
+- **Discussions**: [GitHub Discussions](https://github.com/zeeklog/zeek.ai/discussions)
 
 ---
 
 # 📄 License
 
-Zeek Desktop is licensed under the [MIT License](https://github.com/zeeklog/zeek-desktop/blob/main/LICENSE). Feel free to use, modify, and distribute!
+Zeek Desktop is licensed under the [MIT License](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE). Feel free to use, modify, and distribute!
 
 ---
 
