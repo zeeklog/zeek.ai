@@ -123,7 +123,7 @@ npm run build:linux
 
 # 📦 发布
 
-- **最新版本**: [v0.0.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.0.1) (2025年4月)
+- **最新版本**: [v0.1.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.1.1) (2025年4月)
 - **支持格式**:
   - **Windows**: NSIS 安装包
   - **macOS**: DMG (已签名)

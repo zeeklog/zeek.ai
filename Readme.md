@@ -140,7 +140,7 @@ npm run build:linux
 | `npm run integrate`    | Integrate renderer into Electron app |
 # 📦 Releases
 
-- **Latest**: [v0.0.1](https://github.com/zeeklog/zeek-desktop/releases/tag/v0.0.1) (April 2025)
+- **Latest**: [v0.1.1](https://github.com/zeeklog/zeek-desktop/releases/tag/v0.1.1) (April 2025)
 - **Supported Formats**:
   - **Windows**: NSIS Installer
   - **macOS**: DMG (Signed)
