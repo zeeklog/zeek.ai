@@ -1,4 +1,5 @@
-# 🚀 Zeek Desktop
+# 🚀 Zeek.ai Desktop App
+
 `
 Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压迫行径】
 `

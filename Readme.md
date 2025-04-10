@@ -1,4 +1,4 @@
-# Zeek.ai Desktop App
+# 🚀 Zeek.ai Desktop App
 
 
 [中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
