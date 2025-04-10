@@ -10,7 +10,7 @@ export default interface TrayTool {
 
 }
 
-export function initTrayTool (mainWindow, userConfigDir) {
+export function initTrayTool (mainWindow: any, userConfigDir: string) {
   const icon = !app.isPackaged
     ? path.join(__dirname, '../assets', 'logo.png') // 开发模式
     : path.join(process.resourcesPath, 'assets', 'logo.png'); // 生产模式
@@ -19,12 +19,6 @@ export function initTrayTool (mainWindow, userConfigDir) {
   let tray = new Tray(icon);
   const contextMenu = Menu.buildFromTemplate([
     { label: '显示主窗口', click: () => mainWindow.show() },
-    // {
-    //   label: '检查更新',
-    //   click: () => {
-    //     autoUpdater.checkForUpdatesAndNotify(); // 检查更新
-    //   }
-    // },
     {
       label: '清除缓存',
       click: () => {
@@ -54,7 +48,7 @@ export function initTrayTool (mainWindow, userConfigDir) {
       }
     },
     {
-      label: '关于Onewo.ai',
+      label: '关于极客ai',
       click: () => shell.openExternal('https://zeeklog.com/') // 打开网页
     },
     {
@@ -67,7 +61,7 @@ export function initTrayTool (mainWindow, userConfigDir) {
     },
     { label: '退出应用', click: () => app.quit() }
   ]);
-  tray.setToolTip('ONEWO.ai');
+  tray.setToolTip('zeek.ai');
   tray.setContextMenu(contextMenu);
 
   // 点击托盘图标时切换窗口显示/隐藏
