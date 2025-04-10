@@ -1,6 +1,8 @@
 # Zeek.ai Desktop App
 
-[中文]([doc/ai-app-set.png](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md)) ｜ [English]([doc/ai-app-set.png](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md))
+
+[中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
+
 
 **Zeek Desktop** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
 
@@ -16,7 +18,7 @@
 
 ## 📊 Key Metrics
 
-- **Downloads**: [Coming Soon](#releases)
+- **Downloads**: [releases](https://github.com/zeeklog/zeek.ai/releases)
 - **Open Issues**: [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
 - **Pull Requests**: [![GitHub PRs](https://img.shields.io/github/issues-pr/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/pulls)
 - **Last Commit**: [![GitHub Last Commit](https://img.shields.io/github/last-commit/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/commits/main)
