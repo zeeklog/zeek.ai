@@ -9,7 +9,6 @@ import type { AppInitConfig } from '../AppInitConfig.js';
 // 导入 Node.js 的路径处理模块
 import path from 'path';
 // 导入文件系统模块，用于文件操作
-// import fs from 'fs';
 // 导入 fsid 的 buildUUID，用于生成唯一 ID
 import { buildUUID } from 'fsid';
 // 导入路径处理函数 dirname 和 join
@@ -23,8 +22,6 @@ import {logoDataUrl} from "./base64Logo.js";
 import Store from 'electron-store'
 // 日志工具
 import logger from 'electron-log'
-// import os from 'os'from
-// import {e} from "unocss";
 
 const store = new Store()
 // 手动定义 __dirname 和 __filename，因为 ESM 模块中默认不可用
@@ -36,11 +33,9 @@ const isDev = import.meta.env.MODE === 'development'
 export let mainWindow: BrowserWindow;
 
 // 定义基本应用文件夹名称
-const basicAppFolderName = 'firestone-os';
+const basicAppFolderName = 'zeek.ai';
 // 定义用户配置目录路径，基于 Electron 的 userData 路径
 const userConfigDir = path.join(app.getPath('userData'), `${basicAppFolderName}/user-config`);
-// 定义本地存储文件路径，用于保存应用数据
-const localStorageFilePath = path.join(userConfigDir, 'localstorage.json');
 // 设置默认的窗口尺寸
 const getBasicWindowConfig = () => {
   const [width, height] = mainWindow.getContentSize();
@@ -515,18 +510,6 @@ class WindowManager implements AppModule {
         globalShortcut.register('F5', () => {
           refreshActiveTab()
         });
-
-        // 加载用户脚本插件
-        // 指定 Tampermonkey 扩展的路径（解压后的文件夹路径）
-        // const extensionPath = path.join(__dirname, 'userScript');
-
-        // // 加载扩展到默认 session
-        // session.defaultSession.loadExtension(extensionPath).then(() => {
-        //   console.log('Tampermonkey 扩展加载成功！');
-        // }).catch(err => {
-        //   console.error('加载扩展失败：', err);
-        // });
-
       }).catch(e => {
         logger.info(e)
       });
@@ -544,8 +527,6 @@ class WindowManager implements AppModule {
     }
   }
 
-
-
   /**
    * 创建主窗口并初始化固定标签页
    * @returns 返回创建的 BrowserWindow 实例
@@ -553,11 +534,6 @@ class WindowManager implements AppModule {
    */
   async createWindow(): Promise<BrowserWindow> {
     try {
-      // 根据平台选择合适的图标文件
-      // const iconPath = process.platform === 'darwin'
-      //   ? join(__dirname, '../assets/ai-zeek.png') // macOS 使用 PNG
-      //   : join(__dirname, '../assets/ai-zeek.ico'); // Windows 使用 ICO
-
       const icon = nativeImage.createFromDataURL(logoDataUrl)
       mainWindow = new BrowserWindow({
         width: 1280,              // 窗口宽度
