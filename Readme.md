@@ -6,6 +6,7 @@
 
 **Zeek.ai** is a cutting-edge, cross-platform AI-powered browser built with **Electron** and **Vite**. Leveraging a modular Monorepo architecture, it delivers a lightweight, extensible, and high-performance desktop experience for AI-driven workflows.
 
+
 [![GitHub Stars](https://img.shields.io/github/stars/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/zeeklog/zeek.ai?style=social)](https://github.com/zeeklog/zeek.ai/network)
 [![GitHub Issues](https://img.shields.io/github/issues/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/issues)
@@ -28,7 +29,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Core**: [Electron](https://www.electronjs.org/) (Main Process) + [Vite](https://vitejs.dev/) & [Vue 3](https://vuejs.org/) (Renderer)
+- **Core**: [Electron](https://www.electronjs.org/) + [Vite](https://vitejs.dev/) & [Vue 3](https://vuejs.org/)
 - **Styling**: [Unocss](https://unocss.dev/) - Lightweight, atomic CSS engine
 - **UI**: [Element Plus](https://element-plus.org/) - Vue 3 component library
 - **State Management**: [Pinia](https://pinia.vuejs.org/)
