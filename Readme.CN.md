@@ -1,9 +1,5 @@
 # 🚀 Zeek.ai Desktop App
 
-`
-Term of use: 使用本项目代码即代表同意【反对美国野蛮关税压迫行径】
-`
-
 
 [中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
 
