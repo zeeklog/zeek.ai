@@ -127,7 +127,7 @@ npm run build:linux
 - **Latest**: [v0.1.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.1.1) (April 2025)
 - **Supported Formats**:
   - **Windows**: NSIS Installer
-  - **macOS**: DMG (Signed)
+  - **macOS**: DMG (Signed)(MAC intel chip is not supporting.)
   - **Linux**: DEB (System Tools Category)
 
 Auto-updates are enabled via `electron-updater`. Check [releases](https://github.com/zeeklog/zeek.ai/releases) for changelogs and binaries.
