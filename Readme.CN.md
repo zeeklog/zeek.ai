@@ -6,7 +6,7 @@
 
 **Zeek.ai** 是一款基于 **Electron** 和 **Vite** 
 打造的跨平台(支持 Windows、macOS 和 Linux) AI 浏览器。
-它集成了 **SearXNG AI 搜索**、开发工具集合、
+集成了 **SearXNG AI 搜索**、开发工具集合、
 市面上最流行的 AI 工具门户，以及代码编写和桌面快捷工具等功能，
 通过模块化的 Monorepo 架构，提供轻量级、可扩展且高效的桌面体验，
 助力 AI 驱动的日常工作流程。

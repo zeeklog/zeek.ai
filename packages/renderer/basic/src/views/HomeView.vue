@@ -99,10 +99,10 @@ async function newTabWithUrl() {
           class="w-[50%]  rounded-2 shadow-lg z-2 p-1em aiInput"
           type="textarea"
           :rows="5"
-          placeholder="无障碍全球AI实时搜索"
+          placeholder="无障碍全球搜索"
           @keyup.enter="newTabWithUrl"
           v-model="search"></el-input>
-        <GradientButton class="text-white pointer ml-1em  z-2" @click="newTabWithUrl" >🚀 提交</GradientButton>
+        <GradientButton class="text-white pointer ml-1em  z-2" @click="newTabWithUrl" >🚀 提问</GradientButton>
         <ParticlesBg
           class="absolute w-[100%] w-full h-full top-[-5px]"
           :quantity="100"

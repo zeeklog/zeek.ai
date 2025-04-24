@@ -16,6 +16,8 @@ import { autoUpdater } from './modules/AutoUpdater.js';
 import { allowInternalOrigins } from './modules/BlockNotAllowdOrigins.js';
 // 导入外部 URL 白名单模块，用于限制允许的外部 URL
 import { allowExternalUrls } from './modules/ExternalUrls.js';
+// 导入全局上下文菜单模块
+import { createGlobalContextMenuModule } from './modules/GlobalContextMenu.js';
 
 /**
  * 初始化 Electron 应用的异步函数
@@ -56,7 +58,7 @@ export async function initApp(initConfig: AppInitConfig): Promise<void> {
     .init(allowExternalUrls(
       new Set(
         initConfig.renderer instanceof URL
-          ? [                          // 如果 renderer 是 URL，允许以下外部 URL
+          ? [
             'https://vite.dev',
             'https://developer.mozilla.org',
             'https://solidjs.com',
@@ -67,9 +69,11 @@ export async function initApp(initConfig: AppInitConfig): Promise<void> {
             'https://www.typescriptlang.org',
             'https://vuejs.org'
           ]
-          : []                           // 否则为空
+          : []
       )
-    ));
+    ))
+    // 添加全局上下文菜单模块
+    .init(createGlobalContextMenuModule());
 
   // 执行模块运行器，完成所有模块的初始化
   await moduleRunner;
