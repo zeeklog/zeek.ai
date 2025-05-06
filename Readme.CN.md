@@ -19,7 +19,11 @@
 [![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek.ai/build.yml)](https://github.com/zeeklog/zeek.ai/actions)
 ![Zeek.ai Banner](doc/ai-app-set.png)
 
-
+## 💪 开发中内容
+- 支持配置接入各个ai-agent, 例如：Chatgpt/Grok/Kimi/Ollama等
+- 支持接入模型供应商
+- 支持切换模型，支持文生图、图生文、文生视频等
+- 支持视频处理、绘画处理
 
 ## 🛠️ 技术栈
 
