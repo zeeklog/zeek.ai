@@ -14,6 +14,13 @@
 [![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
 
 
+## 💪 FN Under Development
+- Supports the configuration for connecting to various AI agents, such as ChatGPT, Grok, Kimi, Ollama, etc.
+- Supports connection to model suppliers.
+- Supports model switching, and also supports functions like text-to-image, image-to-text, text-to-video, etc.
+- Supports video painting.
+
+
 ![Zeek.ai Banner](doc/ai-app-set.png)
 
 
