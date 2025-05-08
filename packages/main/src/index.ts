@@ -18,6 +18,8 @@ import { allowInternalOrigins } from './modules/BlockNotAllowdOrigins.js';
 import { allowExternalUrls } from './modules/ExternalUrls.js';
 // 导入全局上下文菜单模块
 import { createGlobalContextMenuModule } from './modules/GlobalContextMenu.js';
+// 导入文本选择菜单模块
+import { createTextSelectionMenu } from './modules/TextSelectionMenu.js';
 
 /**
  * 初始化 Electron 应用的异步函数
@@ -73,7 +75,9 @@ export async function initApp(initConfig: AppInitConfig): Promise<void> {
       )
     ))
     // 添加全局上下文菜单模块
-    .init(createGlobalContextMenuModule());
+    .init(createGlobalContextMenuModule())
+    // 添加文本选择菜单模块
+    .init(createTextSelectionMenu());
 
   // 执行模块运行器，完成所有模块的初始化
   await moduleRunner;

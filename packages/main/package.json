@@ -12,7 +12,9 @@
   "dependencies": {
     "@vite-electron-builder/preload": "*",
     "@vite-electron-builder/renderer": "*",
-    "electron-updater": "6.3.9"
+    "electron-updater": "6.3.9",
+    "ref-napi": "^3.0.3",
+    "ref-struct-di": "^1.1.1"
   },
   "devDependencies": {
     "@vite-electron-builder/electron-versions": "*",

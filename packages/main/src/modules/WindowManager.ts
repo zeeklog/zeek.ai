@@ -33,7 +33,7 @@ const isDev = import.meta.env.MODE === 'development'
 export let mainWindow: BrowserWindow;
 
 // 定义基本应用文件夹名称
-const basicAppFolderName = 'zeek.ai';
+const basicAppFolderName = 'ChatGPT';
 // 定义用户配置目录路径，基于 Electron 的 userData 路径
 const userConfigDir = path.join(app.getPath('userData'), `${basicAppFolderName}/user-config`);
 // 设置默认的窗口尺寸

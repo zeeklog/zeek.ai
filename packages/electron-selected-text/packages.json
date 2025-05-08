@@ -1,0 +1,16 @@
+{
+  "name": "selected-text",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Node.js library to get system-wide selected text",
+  "main": "getSelectedText.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "node-addon-api": "^7.0.0",
+    "napi-build-utils": "^1.0.2"
+  },
+  "gypfile": true
+}
