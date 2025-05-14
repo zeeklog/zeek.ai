@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev:basic\" \"npm run dev:tools\"",
+    "dev": "concurrently \"npm run dev:basic\" \"npm run dev:tools\" \"npm run dev:chat\"",
     "dev:basic": "cd basic && npm run dev",
     "dev:tools": "cd tools && npm run dev",
+    "dev:chat": "cd chat && npm run dev",
     "build:basic": "cd basic && npm run build",
     "build:tools": "cd tools && npm run build",
-    "build": "npm run build:basic && npm run build:tools"
+    "build:chat": "cd chat && npm run build",
+    "build": "npm run build:basic && npm run build:tools && npm run build:chat"
   },
   "dependencies": {
     "concurrently": "^9.1.2",

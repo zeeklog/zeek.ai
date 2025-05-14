@@ -10,25 +10,28 @@ function Footer({ startupConfig }: { startupConfig: TStartupConfig | null | unde
   const termsOfService = startupConfig.interface?.termsOfService;
 
   const privacyPolicyRender = privacyPolicy?.externalUrl && (
-    <a
-      className="text-sm text-green-500"
-      href={privacyPolicy.externalUrl}
-      target={privacyPolicy.openNewTab ? '_blank' : undefined}
-      rel="noreferrer"
-    >
-      {localize('com_ui_privacy_policy')}
-    </a>
+    <></>
+    // <a
+    //   className="text-sm text-green-500"
+    //   href={privacyPolicy.externalUrl}
+    //   target={privacyPolicy.openNewTab ? '_blank' : undefined}
+    //   rel="noreferrer"
+    // >
+    //   {localize('com_ui_privacy_policy')}
+    // </a>
   );
 
   const termsOfServiceRender = termsOfService?.externalUrl && (
-    <a
-      className="text-sm text-green-500"
-      href={termsOfService.externalUrl}
-      target={termsOfService.openNewTab ? '_blank' : undefined}
-      rel="noreferrer"
-    >
-      {localize('com_ui_terms_of_service')}
-    </a>
+
+    <></>
+    // <a
+    //   className="text-sm text-green-500"
+    //   href={termsOfService.externalUrl}
+    //   target={termsOfService.openNewTab ? '_blank' : undefined}
+    //   rel="noreferrer"
+    // >
+    //   {localize('com_ui_terms_of_service')}
+    // </a>
   );
 
   return (

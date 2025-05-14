@@ -13,35 +13,34 @@ export default function Footer({ className }: { className?: string }) {
   const termsOfService = config?.interface?.termsOfService;
 
   const privacyPolicyRender = privacyPolicy?.externalUrl != null && (
-    <a
-      className="text-text-secondary underline"
-      href={privacyPolicy.externalUrl}
-      target={privacyPolicy.openNewTab === true ? '_blank' : undefined}
-      rel="noreferrer"
-    >
-      {localize('com_ui_privacy_policy')}
-    </a>
+    <></>
+    // <a
+    //   className="text-text-secondary underline"
+    //   href={privacyPolicy.externalUrl}
+    //   target={privacyPolicy.openNewTab === true ? '_blank' : undefined}
+    //   rel="noreferrer"
+    // >
+    //   {localize('com_ui_privacy_policy')}
+    // </a>
   );
 
   const termsOfServiceRender = termsOfService?.externalUrl != null && (
-    <a
-      className="text-text-secondary underline"
-      href={termsOfService.externalUrl}
-      target={termsOfService.openNewTab === true ? '_blank' : undefined}
-      rel="noreferrer"
-    >
-      {localize('com_ui_terms_of_service')}
-    </a>
+    <></>
+    // <a
+    //   className="text-text-secondary underline"
+    //   href={termsOfService.externalUrl}
+    //   target={termsOfService.openNewTab === true ? '_blank' : undefined}
+    //   rel="noreferrer"
+    // >
+    //   {localize('com_ui_terms_of_service')}
+    // </a>
   );
 
-  const mainContentParts = (
-    typeof config?.customFooter === 'string'
-      ? config.customFooter
-      : '[LibreChat ' +
-        Constants.VERSION +
-        '](https://librechat.ai) - ' +
-        localize('com_ui_latest_footer')
-  ).split('|');
+  // const mainContentParts = (
+  //   typeof config?.customFooter === 'string'
+  //     ? config.customFooter
+  //     :  'All Rights not reserved · zeek.ai'
+  // ).split('|');
 
   useEffect(() => {
     if (config?.analyticsGtmId != null && typeof window.google_tag_manager === 'undefined') {
@@ -52,33 +51,15 @@ export default function Footer({ className }: { className?: string }) {
     }
   }, [config?.analyticsGtmId]);
 
-  const mainContentRender = mainContentParts.map((text, index) => (
-    <React.Fragment key={`main-content-part-${index}`}>
-      <ReactMarkdown
-        components={{
-          a: ({ node: _n, href, children, ...otherProps }) => {
-            return (
-              <a
-                className="text-text-secondary underline"
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                {...otherProps}
-              >
-                {children}
-              </a>
-            );
-          },
-
-          p: ({ node: _n, ...props }) => <span {...props} />,
-        }}
-      >
-        {text.trim()}
+  const mainContentRender = [(
+    <React.Fragment >
+      <ReactMarkdown >
+        All Rights not reserved · zeek.ai
       </ReactMarkdown>
     </React.Fragment>
-  ));
+  )]
 
-  const footerElements = [...mainContentRender, privacyPolicyRender, termsOfServiceRender].filter(
+  const footerElements = [...mainContentRender].filter(
     Boolean,
   );
 

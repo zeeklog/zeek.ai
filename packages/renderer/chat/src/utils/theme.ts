@@ -34,5 +34,5 @@ export const getInitialTheme = () => {
     }
   }
 
-  return 'light'; // light theme as the default;
+  return 'dark'; // light theme as the default;
 };

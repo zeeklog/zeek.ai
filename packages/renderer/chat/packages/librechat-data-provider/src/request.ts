@@ -4,6 +4,10 @@ import * as endpoints from './api-endpoints';
 import { setTokenHeader } from './headers-helpers';
 import type * as t from './types';
 
+// 设置 axios 默认配置
+// @ts-ignore
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+
 async function _get<T>(url: string, options?: AxiosRequestConfig): Promise<T> {
   const response = await axios.get(url, { ...options });
   return response.data;

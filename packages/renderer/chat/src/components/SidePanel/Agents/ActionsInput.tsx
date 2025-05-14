@@ -260,11 +260,11 @@ export default function ActionsInput({
       )}
       <div className="relative my-1">
         <ActionCallback action_id={action?.action_id} />
-        <div className="mb-1.5 flex items-center">
-          <label className="text-token-text-primary block font-medium">
-            {localize('com_ui_privacy_policy_url')}
-          </label>
-        </div>
+        {/*<div className="mb-1.5 flex items-center">*/}
+        {/*  <label className="text-token-text-primary block font-medium">*/}
+        {/*    {localize('com_ui_privacy_policy_url')}*/}
+        {/*  </label>*/}
+        {/*</div>*/}
         <div className="border-token-border-medium bg-token-surface-primary hover:border-token-border-hover flex h-9 w-full rounded-lg border">
           <input
             type="text"

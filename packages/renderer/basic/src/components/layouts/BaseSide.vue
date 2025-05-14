@@ -77,6 +77,10 @@ const gotoLocalApp = () => {
   activeMenu.value = 'tools'; // 设置工具箱的 index
   window?.$tabs?.newTab(import.meta.env.MODE === 'development' ? 'http://localhost:6173': `tools://`);
 };
+const gotoChatAi = () => {
+  activeMenu.value = 'chat'; // 设置工具箱的 index
+  window?.$tabs?.newTab(import.meta.env.MODE === 'development' ? 'http://localhost:3090': `chat://`);
+};
 
 getAppCategoryList();
 </script>
@@ -88,6 +92,15 @@ getAppCategoryList();
     @open="handleOpen"
     @close="handleClose"
   >
+
+    <el-menu-item class="hoverScale" :index="'chat'" @click="gotoChatAi()">
+      <el-icon size="22" class="hoverScale">
+        <img class="w-22px h-22px" :src="`./img/agent.png`" alt="" />
+      </el-icon>
+      <template #title>
+        极客ai
+      </template>
+    </el-menu-item>
     <el-menu-item
       v-for="item in category"
       :key="item.id"

@@ -226,14 +226,14 @@ class WindowManager implements AppModule {
       view.setBounds(getBasicWindowConfig()); // 设置标签页视图边界
 
       try {
-        if (url.startsWith('tools://') || url.startsWith('workflow://')) {
+        if (url.startsWith('tools://') || url.startsWith('chat://')) {
           // 使用本地应用协议
           // 生产环境使用资源目录， 开发环境使用本地配置
           if (!isDev) {
             if (url.startsWith('tools')) {
               url = fileURLToPath(import.meta.resolve('@vite-electron-builder/renderer/dist/tools/index.html/#/'))
-            } else if (url.startsWith('workflow')) {
-              url = fileURLToPath(import.meta.resolve('@vite-electron-builder/renderer/dist/workflow/index.html'))
+            } else if (url.startsWith('chat')) {
+              url = fileURLToPath(import.meta.resolve('@vite-electron-builder/renderer/dist/chat/index.html'))
             } else {
               url = fileURLToPath(import.meta.resolve(`@vite-electron-builder/renderer/dist/basic/error/500.html`))
             }
@@ -279,7 +279,7 @@ class WindowManager implements AppModule {
                 loadErrorPage(tab, event, e, view)
               })
           } else {
-            const loadFile = fileURLToPath(import.meta.resolve('@vite-electron-builder/renderer/dist/tools/index.html'))
+            const loadFile = url
             logger.info(`Load File: ${loadFile}`)
             view.webContents.loadFile(loadFile).then(() => {
               tab.title = view.webContents.getTitle() || '加载中';

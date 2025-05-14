@@ -57,6 +57,13 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
+      workbox: {
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // Set to 5 MiB
+        globIgnores: [
+          'assets/mac-address-lookup*.js',
+          'assets/text-diff*.js',
+        ],
+      },
       manifest: {
         name: 'Zeeklog Tools',
         description: 'Aggregated set of useful tools for developers.',
@@ -118,5 +125,6 @@ export default defineConfig({
     target: 'esnext',
     outDir: path.resolve(__dirname, '../dist/tools'), // 输出到 pack/basic
     emptyOutDir: true, // 清空输出目录
+    chunkSizeWarningLimit: 5000, // Set to 5000 kB
   },
 });
