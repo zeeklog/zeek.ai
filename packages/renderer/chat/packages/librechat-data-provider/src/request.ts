@@ -6,7 +6,7 @@ import type * as t from './types';
 
 // 设置 axios 默认配置
 // @ts-ignore
-axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3080';
 
 async function _get<T>(url: string, options?: AxiosRequestConfig): Promise<T> {
   const response = await axios.get(url, { ...options });
@@ -138,7 +138,7 @@ axios.interceptors.response.use(
             `Refresh token failed from shared link, attempting request to ${originalRequest.url}`,
           );
         } else {
-          window.location.href = '/login';
+          window.location.href = '#/login';
         }
       } catch (err) {
         processQueue(err as AxiosError, null);

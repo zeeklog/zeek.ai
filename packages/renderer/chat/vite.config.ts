@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     // Set the directory where environment variables are loaded from and restrict prefixes
-    envDir: '../',
+    envDir: './',
     base: './',
     envPrefix: ['VITE_', 'SCRIPT_', 'DOMAIN_', 'ALLOW_'],
     plugins: [
@@ -58,27 +58,27 @@ export default defineConfig(({ mode }) => {
           theme_color: '#009688',
           icons: [
             {
-              src: '/assets/favicon-32x32.png',
+              src: 'assets/favicon-32x32.png',
               sizes: '32x32',
               type: 'image/png',
             },
             {
-              src: '/assets/favicon-16x16.png',
+              src: 'assets/favicon-16x16.png',
               sizes: '16x16',
               type: 'image/png',
             },
             {
-              src: '/assets/apple-touch-icon-180x180.png',
+              src: 'assets/apple-touch-icon-180x180.png',
               sizes: '180x180',
               type: 'image/png',
             },
             {
-              src: '/assets/icon-192x192.png',
+              src: 'assets/icon-192x192.png',
               sizes: '192x192',
               type: 'image/png',
             },
             {
-              src: '/assets/maskable-icon.png',
+              src: 'assets/maskable-icon.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'maskable',
@@ -92,9 +92,13 @@ export default defineConfig(({ mode }) => {
       }),
     ],
     publicDir: './public',
+    define: {
+      'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),
+    },
     build: {
+      target: 'esnext',
       sourcemap: process.env.NODE_ENV === 'development',
-      outDir: '../dist/chat',
+      outDir: path.resolve(__dirname, '../dist/chat'),
       minify: 'terser',
       rollupOptions: {
         preserveEntrySignatures: 'strict',
@@ -157,7 +161,7 @@ export default defineConfig(({ mode }) => {
           warn(warning);
         },
       },
-      chunkSizeWarningLimit: 1200,
+      chunkSizeWarningLimit: 2000,
     },
     resolve: {
       alias: {
