@@ -10,13 +10,13 @@ export default function BackToChat({ className }: { className?: string }) {
   const clickHandler = (event: React.MouseEvent<HTMLAnchorElement>) => {
     if (event.button === 0 && !(event.ctrlKey || event.metaKey)) {
       event.preventDefault();
-      navigate('/c/new');
+      navigate('#/c/new');
     }
   };
   return (
     <a
       className={cn(buttonVariants({ variant: 'outline' }), className)}
-      href="/"
+      href="#/"
       onClick={clickHandler}
     >
       <ArrowLeft className="icon-xs mr-2" />

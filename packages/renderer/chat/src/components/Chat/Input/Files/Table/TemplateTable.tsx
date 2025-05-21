@@ -47,7 +47,7 @@ export default function Template() {
                 <div className="flex items-center justify-end gap-2">
                   <span className="" data-state="closed">
                     <a
-                      href="/c/da3130ea-830c-4dd2-9d2d-d875e71e3867"
+                      href="#/c/da3130ea-830c-4dd2-9d2d-d875e71e3867"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="View source chat"

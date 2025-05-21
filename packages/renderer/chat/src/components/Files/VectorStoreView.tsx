@@ -16,7 +16,7 @@ export default function VectorStoreView() {
           variant={'outline'}
           size={'sm'}
           onClick={() => {
-            navigate('/d/vector-stores');
+            navigate('#/d/vector-stores');
           }}
         >
           Go back

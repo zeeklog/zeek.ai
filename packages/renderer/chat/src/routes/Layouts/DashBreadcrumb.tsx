@@ -63,7 +63,7 @@ export default function DashBreadcrumb() {
         <BreadcrumbList>
           <BreadcrumbItem className="hover:dark:text-white">
             <BreadcrumbLink
-              href="/"
+              href="#/"
               className="flex flex-row items-center gap-1"
               onClick={chatLinkHandler}
             >
@@ -94,7 +94,7 @@ export default function DashBreadcrumb() {
         */}
           <BreadcrumbItem className="hover:dark:text-white">
             <BreadcrumbLink
-              href="/d/prompts"
+              href="#/d/prompts"
               className="flex flex-row items-center gap-1"
               onClick={promptsLinkHandler}
             >

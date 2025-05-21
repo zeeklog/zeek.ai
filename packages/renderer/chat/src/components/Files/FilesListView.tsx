@@ -19,7 +19,7 @@ export default function FilesListView() {
             variant={'outline'}
             size={'sm'}
             onClick={() => {
-              navigate('/d/files');
+              navigate('#/d/files');
             }}
           >
             {localize('com_ui_go_back')}

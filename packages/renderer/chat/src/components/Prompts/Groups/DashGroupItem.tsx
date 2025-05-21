@@ -41,7 +41,7 @@ function DashGroupItemComponent({ group, instanceProjectId }: DashGroupItemProps
   const deleteGroup = useDeletePromptGroup({
     onSuccess: (_response, variables) => {
       if (variables.id === group._id) {
-        navigate('/d/prompts');
+        navigate('#/d/prompts');
       }
     },
   });

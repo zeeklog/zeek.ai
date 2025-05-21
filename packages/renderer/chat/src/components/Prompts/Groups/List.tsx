@@ -33,7 +33,7 @@ export default function List({
           <Button
             variant="outline"
             className={`w-full bg-transparent ${isChatRoute ? '' : 'mx-2'}`}
-            onClick={() => navigate('/d/prompts/new')}
+            onClick={() => navigate('#/d/prompts/new')}
           >
             <Plus className="size-4" aria-hidden />
             {localize('com_ui_create_prompt')}

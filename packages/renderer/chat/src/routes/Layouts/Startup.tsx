@@ -30,7 +30,7 @@ export default function StartupLayout({ isAuthenticated }: { isAuthenticated?: b
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/c/new', { replace: true });
+      navigate('#/c/new', { replace: true });
     }
     if (data) {
       setStartupConfig(data);

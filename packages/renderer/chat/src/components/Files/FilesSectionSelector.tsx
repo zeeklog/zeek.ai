@@ -25,7 +25,7 @@ export default function FilesSectionSelector() {
           style={selectedPage === '/vector-stores' ? darkButton : lightButton}
           onClick={() => {
             selectedPage = '/vector-stores';
-            navigate('/d/vector-stores');
+            navigate('#/d/vector-stores');
           }}
         >
           Vector Stores
@@ -37,7 +37,7 @@ export default function FilesSectionSelector() {
           style={selectedPage === '/files' ? darkButton : lightButton}
           onClick={() => {
             selectedPage = '/files';
-            navigate('/d/files');
+            navigate('#/d/files');
           }}
         >
           Files

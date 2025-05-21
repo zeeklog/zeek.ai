@@ -15,7 +15,7 @@ const FileDashboardView = () => {
             variant={'outline'}
             size={'sm'}
             onClick={() => {
-              navigate('/d');
+              navigate('#/d');
             }}
           >
             Go back

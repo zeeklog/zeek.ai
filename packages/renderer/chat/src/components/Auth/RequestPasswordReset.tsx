@@ -25,7 +25,7 @@ const ResetPasswordBodyText = () => {
       <p>{localize('com_auth_reset_password_if_email_exists')}</p>
       <a
         className="inline-flex text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
-        href="/login"
+        href="#/login"
       >
         {localize('com_auth_back_to_login')}
       </a>
@@ -146,7 +146,7 @@ function RequestPasswordReset() {
           {localize('com_auth_continue')}
         </button>
         <a
-          href="/login"
+          href="#/login"
           className="block text-center text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
         >
           {localize('com_auth_back_to_login')}
