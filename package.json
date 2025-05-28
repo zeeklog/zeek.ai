@@ -1,7 +1,7 @@
 {
   "name": "ai.zeeklog.com",
   "description": "An ai browser build with Electron & Vite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "homepage": "https://zeeklog.com",

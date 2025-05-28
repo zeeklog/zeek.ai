@@ -66,3 +66,4 @@ packages/main/node_modules
 .vscode
 .github
 server/src/common/config/database.js
+.env
