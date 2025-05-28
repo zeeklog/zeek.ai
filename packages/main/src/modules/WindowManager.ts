@@ -217,6 +217,7 @@ class WindowManager implements AppModule {
       const tabId = buildUUID(); // 生成唯一标签页 ID
       const view = new WebContentsView({
         webPreferences: {
+          webSecurity: false, // 禁用同源策略
           nodeIntegration: true,      // 启用 Node.js 集成
           contextIsolation: true,     // 启用上下文隔离
           sandbox: false,             // 禁用沙盒
@@ -322,6 +323,7 @@ class WindowManager implements AppModule {
             const newTabId = buildUUID();
             const newView = new WebContentsView({
               webPreferences: {
+                webSecurity: false, // 禁用同源策略
                 nodeIntegration: true,
                 contextIsolation: true,
                 sandbox: false,
