@@ -18,7 +18,13 @@
 [![License](https://img.shields.io/github/license/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/zeeklog/zeek.ai)](https://github.com/zeeklog/zeek.ai/releases)
 [![Build Status](https://img.shields.io/github/actions/status/zeeklog/zeek.ai/build.yml)](https://github.com/zeeklog/zeek.ai/actions)
+
+
+### Ai search
 ![Zeek.ai Banner](doc/ai-app-set.png)
+### Ai agent for Popular supplier
+![ai-agent-config.png](doc/ai-agent-config.png)
+
 
 ## 💪 开发中内容
 - 支持配置接入各个ai-agent, 例如：Chatgpt/Grok/Kimi/Ollama等
@@ -56,6 +62,8 @@ Zeek.ai 在 `packages/` 下采用 **Monorepo** 架构，以实现模块化和可
   ![AI Search](doc/ai-search.png)
 - **`renderer/tools`**: 可扩展工具和插件  
   ![Tools](doc/tools.png)
+- **`renderer/chat`**: Extensible ai agent
+  ![ai-agent-example.png](doc/ai-agent-example.png)
 
 ---
 

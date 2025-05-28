@@ -10,9 +10,20 @@ import { ToastProvider } from './Providers';
 import Toast from './components/ui/Toast';
 import { LiveAnnouncer } from '~/a11y';
 import { router } from './routes';
+import {useEffect} from "react";
+import { setTokenHeader } from 'librechat-data-provider';
+
 
 const App = () => {
   const { setError } = useApiErrorBoundary();
+
+  // useEffect(() => {
+  //   const token = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+  //   const user = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+  //   if (token && user) {
+  //     setTokenHeader(token)
+  //   }
+  // }, []);
 
   const queryClient = new QueryClient({
     queryCache: new QueryCache({

@@ -52,6 +52,8 @@ const AuthContextProvider = ({
       const { token, isAuthenticated, user, redirect } = userContext;
       setUser(user);
       setToken(token);
+      localStorage.setItem(import.meta.env.VITE_ENV_CACHE_USER_KEY, JSON.stringify(user));
+      localStorage.setItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY, token);
       //@ts-ignore - ok for token to be undefined initially
       setTokenHeader(token);
       setIsAuthenticated(isAuthenticated);

@@ -21,9 +21,10 @@
 - Supports model switching, and also supports functions like text-to-image, image-to-text, text-to-video, etc.
 - Supports video painting.
 
-
+### Ai search
 ![Zeek.ai Banner](doc/ai-app-set.png)
-
+### Ai agent for Popular supplier
+![ai-agent-config.png](doc/ai-agent-config.png)
 
 ## 📊 Key Metrics
 
@@ -65,6 +66,8 @@ Zeek.ai uses a **Monorepo** architecture under `packages/` for modularity and sc
   ![AI Search](doc/ai-search.png)
 - **`renderer/tools`**: Extensible tools and plugins  
   ![Tools](doc/tools.png)
+- **`renderer/chat`**: Extensible ai agent
+![ai-agent-example.png](doc/ai-agent-example.png)
 
 ---
 

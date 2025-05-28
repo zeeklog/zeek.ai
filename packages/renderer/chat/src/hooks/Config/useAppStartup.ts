@@ -33,12 +33,13 @@ export default function useAppStartup({
 
   /** Set the app title */
   useEffect(() => {
-    const appTitle = startupConfig?.appTitle ?? '';
-    if (!appTitle) {
-      return;
-    }
-    document.title = appTitle;
-    localStorage.setItem(LocalStorageKeys.APP_TITLE, appTitle);
+    // const appTitle = startupConfig?.appTitle ?? '';
+    // if (!appTitle) {
+    //   return;
+    // }
+    // alert(appTitle)
+    document.title = '极客ai';
+    localStorage.setItem(LocalStorageKeys.APP_TITLE, '极客ai');
   }, [startupConfig]);
 
   /** Set the default spec's preset as default */
