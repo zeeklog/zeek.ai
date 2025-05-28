@@ -49,6 +49,7 @@ Zeek.ai 在 `packages/` 下采用 **Monorepo** 架构，以实现模块化和可
 | `packages/preload`      | 预加载脚本，安全桥接主进程和渲染器                 | Node.js, Electron           |
 | `packages/electron-version` | 管理 Electron 版本兼容性                 | Node.js                     |
 | `packages/integrate-renderer` | 自动化渲染器集成，用于构建和开发环境                | Vite, 自定义脚本            |
+| `packages/chat`               | Ai agent chat, support a lot of supplier. (Mix Component from LibreChat) | React                     |
 
 ### 渲染器子模块
 - **`renderer/basic`**: 核心 UI 框架，支持 AI 工具执行  

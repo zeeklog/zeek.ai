@@ -51,13 +51,14 @@
 
 Zeek.ai uses a **Monorepo** architecture under `packages/` for modularity and scalability:
 
-| Module                  | Description                                                                 | Tech Stack                  |
-|-------------------------|-----------------------------------------------------------------------------|-----------------------------|
-| `packages/main`         | Electron main process: Window management, IPC, and app lifecycle            | Node.js, Electron           |
-| `packages/renderer`     | UI renderer with submodules for core UI and tools                           | Vue 3, Vite, Element Plus   |
-| `packages/preload`      | Preload scripts bridging main and renderer securely                         | Node.js, Electron           |
-| `packages/electron-version` | Manages Electron version compatibility                                  | Node.js                     |
-| `packages/integrate-renderer` | Automates renderer integration for builds and dev                    | Vite, Custom Scripts        |
+| Module                        | Description                                                              | Tech Stack                |
+|-------------------------------|--------------------------------------------------------------------------|---------------------------|
+| `packages/main`               | Electron main process: Window management, IPC, and app lifecycle         | Node.js, Electron         |
+| `packages/renderer`           | UI renderer with submodules for core UI and tools                        | Vue 3, Vite, Element Plus |
+| `packages/preload`            | Preload scripts bridging main and renderer securely                      | Node.js, Electron         |
+| `packages/electron-version`   | Manages Electron version compatibility                                   | Node.js                   |
+| `packages/integrate-renderer` | Automates renderer integration for builds and dev                        | Vite, Custom Scripts      |
+| `packages/chat`               | Ai agent chat, support a lot of supplier. (Mix Component from LibreChat) | React                     |
 
 ### Renderer Submodules
 - **`renderer/basic`**: Core UI framework with AI tool execution  
