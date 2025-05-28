@@ -37,7 +37,7 @@ export default function Conversation({
   const { data: endpointsConfig } = useGetEndpointsQuery();
   const { navigateWithLastTools } = useNavigateToConvo();
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
-  const { conversationId, title = '' } = conversation;
+  const { conversationId, title = '极客ai' } = conversation;
 
   const [titleInput, setTitleInput] = useState(title || '');
   const [renaming, setRenaming] = useState(false);
