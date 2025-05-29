@@ -6,6 +6,7 @@ import { specsConfigSchema, TSpecsConfig } from './models';
 import { fileConfigSchema } from './file-config';
 import { FileSources } from './types/files';
 import { MCPServersSchema } from './mcp';
+const baseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || '';
 
 export const defaultSocialLogins = ['google', 'facebook', 'openid', 'github', 'discord'];
 
@@ -811,17 +812,17 @@ export const initialModelsConfig: TModelsConfig = {
 };
 
 export const EndpointURLs: { [key in EModelEndpoint]: string } = {
-  [EModelEndpoint.openAI]: `/api/ask/${EModelEndpoint.openAI}`,
-  [EModelEndpoint.google]: `/api/ask/${EModelEndpoint.google}`,
-  [EModelEndpoint.custom]: `/api/ask/${EModelEndpoint.custom}`,
-  [EModelEndpoint.anthropic]: `/api/ask/${EModelEndpoint.anthropic}`,
-  [EModelEndpoint.gptPlugins]: `/api/ask/${EModelEndpoint.gptPlugins}`,
-  [EModelEndpoint.azureOpenAI]: `/api/ask/${EModelEndpoint.azureOpenAI}`,
-  [EModelEndpoint.chatGPTBrowser]: `/api/ask/${EModelEndpoint.chatGPTBrowser}`,
-  [EModelEndpoint.azureAssistants]: '/api/assistants/v1/chat',
-  [EModelEndpoint.assistants]: '/api/assistants/v2/chat',
-  [EModelEndpoint.agents]: `/api/${EModelEndpoint.agents}/chat`,
-  [EModelEndpoint.bedrock]: `/api/${EModelEndpoint.bedrock}/chat`,
+  [EModelEndpoint.openAI]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.openAI}`,
+  [EModelEndpoint.google]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.google}`,
+  [EModelEndpoint.custom]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.custom}`,
+  [EModelEndpoint.anthropic]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.anthropic}`,
+  [EModelEndpoint.gptPlugins]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.gptPlugins}`,
+  [EModelEndpoint.azureOpenAI]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.azureOpenAI}`,
+  [EModelEndpoint.chatGPTBrowser]: `${import.meta.env.VITE_API_BASE_URL}/api/ask/${EModelEndpoint.chatGPTBrowser}`,
+  [EModelEndpoint.azureAssistants]: `${import.meta.env.VITE_API_BASE_URL}/api/assistants/v1/chat`,
+  [EModelEndpoint.assistants]: `${import.meta.env.VITE_API_BASE_URL}/api/assistants/v2/chat`,
+  [EModelEndpoint.agents]: `${import.meta.env.VITE_API_BASE_URL}/api/${EModelEndpoint.agents}/chat`,
+  [EModelEndpoint.bedrock]: `${import.meta.env.VITE_API_BASE_URL}/api/${EModelEndpoint.bedrock}/chat`,
 };
 
 export const modularEndpoints = new Set<EModelEndpoint | string>([
