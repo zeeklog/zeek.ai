@@ -10,20 +10,19 @@ import { ToastProvider } from './Providers';
 import Toast from './components/ui/Toast';
 import { LiveAnnouncer } from '~/a11y';
 import { router } from './routes';
-import {useEffect} from "react";
+import { useEffect } from "react";
 import { setTokenHeader } from 'librechat-data-provider';
-
 
 const App = () => {
   const { setError } = useApiErrorBoundary();
 
-  // useEffect(() => {
-  //   const token = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
-  //   const user = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
-  //   if (token && user) {
-  //     setTokenHeader(token)
-  //   }
-  // }, []);
+  useEffect(() => {
+    // 应用启动时，从 localStorage 读取 token 并设置到请求头
+    const token = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+    if (token) {
+      setTokenHeader(token);
+    }
+  }, []);
 
   const queryClient = new QueryClient({
     queryCache: new QueryCache({
