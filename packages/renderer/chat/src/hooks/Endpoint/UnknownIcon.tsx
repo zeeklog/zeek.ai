@@ -3,23 +3,26 @@ import { EModelEndpoint, KnownEndpoints } from 'librechat-data-provider';
 import { CustomMinimalIcon, XAIcon } from '~/components/svg';
 import { IconContext } from '~/common';
 import { cn } from '~/utils';
+const baseUrl = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || '';
 
 const knownEndpointAssets = {
-  [KnownEndpoints.anyscale]: '/assets/anyscale.png',
-  [KnownEndpoints.apipie]: '/assets/apipie.png',
-  [KnownEndpoints.cohere]: '/assets/cohere.png',
-  [KnownEndpoints.deepseek]: '/assets/deepseek.svg',
-  [KnownEndpoints.fireworks]: '/assets/fireworks.png',
-  [KnownEndpoints.groq]: '/assets/groq.png',
-  [KnownEndpoints.huggingface]: '/assets/huggingface.svg',
-  [KnownEndpoints.mistral]: '/assets/mistral.png',
-  [KnownEndpoints.mlx]: '/assets/mlx.png',
-  [KnownEndpoints.ollama]: '/assets/ollama.png',
-  [KnownEndpoints.openrouter]: '/assets/openrouter.png',
-  [KnownEndpoints.perplexity]: '/assets/perplexity.png',
-  [KnownEndpoints.shuttleai]: '/assets/shuttleai.png',
-  [KnownEndpoints['together.ai']]: '/assets/together.png',
-  [KnownEndpoints.unify]: '/assets/unify.webp',
+  [KnownEndpoints.anyscale]: `${baseUrl}/assets/anyscale.png`,
+  [KnownEndpoints.apipie]: `${baseUrl}/assets/apipie.png`,
+  [KnownEndpoints.cohere]: `${baseUrl}/assets/cohere.png`,
+  [KnownEndpoints.deepseek]: `${baseUrl}/assets/deepseek.svg`,
+  [KnownEndpoints.fireworks]: `${baseUrl}/assets/fireworks.png`,
+  [KnownEndpoints.groq]: `${baseUrl}/assets/groq.png`,
+  [KnownEndpoints.huggingface]: `${baseUrl}/assets/huggingface.svg`,
+  [KnownEndpoints.mistral]: `${baseUrl}/assets/mistral.png`,
+  [KnownEndpoints.mlx]: `${baseUrl}/assets/mlx.png`,
+  [KnownEndpoints.ollama]: `${baseUrl}/assets/ollama.png`,
+  [KnownEndpoints.openrouter]: `${baseUrl}/assets/openrouter.png`,
+  [KnownEndpoints.perplexity]: `${baseUrl}/assets/perplexity.png`,
+  // @ts-ignore
+  [KnownEndpoints.requesty]: `${baseUrl}/assets/requesty.ico`,
+  [KnownEndpoints.shuttleai]: `${baseUrl}/assets/shuttleai.png`,
+  [KnownEndpoints['together.ai']]: `${baseUrl}/assets/together.png`,
+  [KnownEndpoints.unify]: `${baseUrl}/assets/unify.webp`,
 };
 
 const knownEndpointClasses = {
