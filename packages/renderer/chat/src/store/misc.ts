@@ -10,10 +10,7 @@ const messageAttachmentsMap = atom<Record<string, TAttachment[] | undefined>>({
   default: {},
 });
 
-const queriesEnabled = atom<boolean>({
-  key: 'queriesEnabled',
-  default: true,
-});
+const queriesEnabled = atomWithLocalStorage<boolean>('queriesEnabled', true);
 
 const isEditingBadges = atom<boolean>({
   key: 'isEditingBadges',
