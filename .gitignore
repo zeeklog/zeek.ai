@@ -67,3 +67,5 @@ packages/main/node_modules
 .github
 server/src/common/config/database.js
 .env
+package-lock.json
+vite-env.d.ts
