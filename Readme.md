@@ -165,6 +165,13 @@ We welcome contributions! Here’s how to get involved:
 - **Website**: [zeeklog.com](https://zeeklog.com)
 - **Support**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **Email**: [001@zeeklog.com](mailto:001@zeeklog.com)
+  
+# 🚀 Contributors
+
+<a href="https://github.com/zeeklog/zeek.ai/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=zeeklog/zeek.ai" />
+</a>
+<br />
 
 ---
 
