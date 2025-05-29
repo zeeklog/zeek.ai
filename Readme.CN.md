@@ -4,8 +4,7 @@
 [中文](https://github.com/zeeklog/zeek.ai/blob/master/Readme.CN.md) ｜ [English](https://github.com/zeeklog/zeek.ai/blob/master/Readme.md)
 
 
-**Zeek.ai** 是一款基于 **Electron** 和 **Vite** 
-打造的跨平台(支持 Windows、macOS 和 Linux) AI 浏览器。
+**Zeek.ai** 是一款跨平台(支持 Windows、macOS 和 Linux) 多大模型（LLM）桌面客户端。
 集成了 **SearXNG AI 搜索**、开发工具集合、
 市面上最流行的 AI 工具门户，以及代码编写和桌面快捷工具等功能，
 通过模块化的 Monorepo 架构，提供轻量级、可扩展且高效的桌面体验，
@@ -162,6 +161,14 @@ npm run build:linux
 - **网站**: [zeeklog.com](https://zeeklog.com)
 - **支持**: [GitHub Issues](https://github.com/zeeklog/zeek.ai/issues)
 - **邮箱**: [001@zeeklog.com](mailto:001@zeeklog.com)
+
+  
+# 🚀 Contributors
+
+<a href="https://github.com/zeeklog/zeek.ai/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=zeeklog/zeek.ai" />
+</a>
+<br />
 
 ---
 
