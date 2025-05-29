@@ -1,6 +1,7 @@
 import { useRecoilCallback } from 'recoil';
 import { clearLocalStorage } from '~/utils/localStorage';
 import store from '~/store';
+import { Constants, LocalStorageKeys } from 'librechat-data-provider';
 
 export default function useClearStates() {
   const clearConversations = store.useClearConvoState();
@@ -42,6 +43,11 @@ export default function useClearStates() {
           reset(store.messagesSiblingIdxFamily(key.toString()));
         }
 
+        // 清理本地存储中的用户认证信息（使用环境变量中定义的 key）
+        localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+        localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+        
+        // 清理其他本地存储
         clearLocalStorage(skipFirst);
       },
     [],
