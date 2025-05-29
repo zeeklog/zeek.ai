@@ -33,9 +33,17 @@ const AuthContextProvider = ({
   children: ReactNode;
 }) => {
   const [user, setUser] = useRecoilState(store.user);
-  const [token, setToken] = useState<string | undefined>(undefined);
+  const [token, setToken] = useState<string | undefined>(() => {
+    // 初始化时从 localStorage 读取 token
+    return localStorage.getItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY) || undefined;
+  });
   const [error, setError] = useState<string | undefined>(undefined);
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    // 初始化时检查是否有 token 和用户信息
+    const storedToken = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+    const storedUser = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+    return !!(storedToken && storedUser);
+  });
   const logoutRedirectRef = useRef<string | undefined>(undefined);
 
   const { data: userRole = null } = useGetRole(SystemRoles.USER, {
@@ -52,11 +60,23 @@ const AuthContextProvider = ({
       const { token, isAuthenticated, user, redirect } = userContext;
       setUser(user);
       setToken(token);
-      localStorage.setItem(import.meta.env.VITE_ENV_CACHE_USER_KEY, JSON.stringify(user));
-      localStorage.setItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY, token);
-      //@ts-ignore - ok for token to be undefined initially
-      setTokenHeader(token);
+      
+      // 持久化存储用户信息和 token
+      if (token) {
+        localStorage.setItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY, token);
+        setTokenHeader(token);
+      } else {
+        localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+      }
+      
+      if (user) {
+        localStorage.setItem(import.meta.env.VITE_ENV_CACHE_USER_KEY, JSON.stringify(user));
+      } else {
+        localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+      }
+      
       setIsAuthenticated(isAuthenticated);
+      
       // Use a custom redirect if set
       const finalRedirect = logoutRedirectRef.current || redirect;
       // Clear the stored redirect
@@ -93,6 +113,11 @@ const AuthContextProvider = ({
   });
   const logoutUser = useLogoutUserMutation({
     onSuccess: (data) => {
+      // 清除本地存储的认证信息
+      localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+      localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+      setTokenHeader('');
+      
       setUserContext({
         token: undefined,
         isAuthenticated: false,
@@ -102,6 +127,11 @@ const AuthContextProvider = ({
     },
     onError: (error) => {
       doSetError((error as Error).message);
+      // 清除本地存储的认证信息
+      localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_TOKEN_KEY);
+      localStorage.removeItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+      setTokenHeader('');
+      
       setUserContext({
         token: undefined,
         isAuthenticated: false,
@@ -199,6 +229,19 @@ const AuthContextProvider = ({
       window.removeEventListener('tokenUpdated', handleTokenUpdate);
     };
   }, [setUserContext, user]);
+
+  // 在组件挂载时恢复用户状态
+  useEffect(() => {
+    const storedUser = localStorage.getItem(import.meta.env.VITE_ENV_CACHE_USER_KEY);
+    if (storedUser) {
+      try {
+        const parsedUser = JSON.parse(storedUser);
+        setUser(parsedUser);
+      } catch (e) {
+        console.error('Error parsing stored user:', e);
+      }
+    }
+  }, [setUser]);
 
   // Make the provider update only when it should
   const memoedValue = useMemo(

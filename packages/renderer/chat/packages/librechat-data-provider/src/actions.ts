@@ -294,6 +294,7 @@ class RequestExecutor {
       ...(this.config.contentType ? { 'Content-Type': this.config.contentType } : {}),
     };
     const method = this.config.method.toLowerCase();
+    // @ts-ignore
     const axios = _axios.create();
 
     // Initialize separate containers for query and body parameters.
