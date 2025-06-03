@@ -1,0 +1,36 @@
+$basic_color: #252529;
+$second_color: #2b2b2d;
+$third_color: #333;
+$text_color: #FFFFFF;
+$text_second_color: #F5f5f5;
+
+$basic_border_color: #FFFFFF20;
+
+$hover_bg_color: rgba(124, 77, 255, 0.2);
+$active_color: rgba(124, 77, 255, 0.79);
+:root {
+  --ep-color-primary: $text_color !important;
+  --ep-fill-color-blank: $basic_color !important;
+  --ep-color-success-dark-2: $basic_color;
+  --ep-menu-hover-text-color: $second_color !important;
+   --ep-bg-color: $text_color;
+   --ep-bg-color-page: $text_second_color;
+   --ep-bg-color-overlay: $text_color;
+   --ep-text-color-primary: #FFFFFF;
+   --ep-text-color-regular: $text_color;
+   --ep-text-color-secondary: $text_second_color;
+   --ep-text-color-placeholder: #a8abb2;
+   --ep-text-color-disabled: #c0c4cc;
+   --ep-border-color: #252529;
+   --ep-border-color-light: #e4e7ed;
+   --ep-border-color-lighter: #ebeef5;
+   --ep-border-color-extra-light: #f2f6fc;
+   --ep-border-color-dark: #d4d7de;
+   --ep-border-color-darker: #cdd0d6;
+   --ep-fill-color: #f0f2f5;
+   --ep-fill-color-light: #f5f7fa;
+   --ep-fill-color-lighter: #fafafa;
+   --ep-fill-color-extra-light: #fafcff;
+   --ep-fill-color-dark: #ebedf0;
+   --ep-fill-color-darker: #e6e8eb;
+ }
