@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zeek.ai</title>
+  <!-- Actually not use -->
+  <script type="module" src="/packages/preload/src/index.ts"></script>
+</head>
+<body>
+<div id="app"></div>
+<script type="module">
+  import Vue from 'vue';
+  import App from '/packages/renderer/src/components/ToolBar/Tab.vue'; // 假设 TabList.vue 在同一目录
+  new Vue({
+    render: h => h(App),
+  }).$mount('#app');
+</script>
+</body>
+</html>

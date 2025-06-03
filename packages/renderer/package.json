@@ -1,0 +1,30 @@
+{
+  "name": "@vite-electron-builder/renderer",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:basic\" \"npm run dev:tools\" \"npm run dev:chat\"",
+    "dev:basic": "cd basic && npm run dev",
+    "dev:tools": "cd tools && npm run dev",
+    "dev:chat": "cd chat && npm run dev",
+    "build:basic": "cd basic && npm run build",
+    "build:tools": "cd tools && npm run build",
+    "build:chat": "cd chat && npm run build",
+    "build": "npm run build:basic && npm run build:tools && npm run build:chat"
+  },
+  "files": [
+    "dist/**\/"
+  ],
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "motion-v": "^1.0.0-beta.1"
+  },
+  "directories": {
+    "output": "dist"
+  },
+  "main": "./dist/basic/index.html",
+  "devDependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.2.0"
+  }
+}
