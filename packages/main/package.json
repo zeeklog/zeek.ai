@@ -1,0 +1,30 @@
+{
+  "name": "@vite-electron-builder/main",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist/**\/",
+    "public/**\/",
+    "assets/**\/"
+  ],
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "@vite-electron-builder/preload": "*",
+    "@vite-electron-builder/renderer": "*",
+    "electron-updater": "6.3.9",
+    "ref-napi": "^3.0.3",
+    "ref-struct-di": "^1.1.1"
+  },
+  "devDependencies": {
+    "@vite-electron-builder/electron-versions": "*",
+    "electron-devtools-installer": "^3.2.0",
+    "typescript": "5.7.2",
+    "vite": "6.0.6"
+  }
+}
