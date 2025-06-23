@@ -74,6 +74,7 @@ Zeek.ai uses a **Monorepo** architecture under `packages/` for modularity and sc
 ## ✨ Features
 
 - **Cross-Platform**: Windows, macOS, Linux support via Electron Builder
+- **Multi Agent Support**: Support multi agent like: grok/chatgpt
 - **Hot Reloading**: Real-time updates for main and renderer in dev mode
 - **Modular Design**: Monorepo structure for easy feature expansion
 - **Auto Updates**: Built-in online update system with Electron Updater
@@ -88,6 +89,7 @@ Zeek.ai uses a **Monorepo** architecture under `packages/` for modularity and sc
 - **OS**: Windows, macOS, or Linux
 
 ### Installation
+- please use `pnpm`
 ```bash
 # Clone the repository
 git clone https://github.com/zeeklog/zeek.ai.git
@@ -136,7 +138,7 @@ npm run build:linux
 | `npm run integrate`    | Integrate renderer into Electron app |
 # 📦 Releases
 
-- **Latest**: [v0.1.1](https://github.com/zeeklog/zeek.ai/releases/tag/v0.1.1) (April 2025)
+- **Latest Release**: [v1.1.0](https://github.com/zeeklog/zeek.ai/releases/tag/v1.1.0) (April 2025)
 - **Supported Formats**:
   - **Windows**: NSIS Installer
   - **macOS**: DMG (Signed)(MAC intel chip is not supporting.)
