@@ -64,4 +64,3 @@ packages/main/node_modules
 server/src/common/config/database.js
 .env
 package-lock.json
-vite-env.d.ts
