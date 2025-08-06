@@ -167,7 +167,8 @@ export default defineConfig(({ mode }) => {
       alias: {
         '~': path.join(__dirname, 'src/'),
         '@root': path.join(__dirname),
-        $fonts: resolve('/fonts'),
+        $fonts: path.join(__dirname, 'public/fonts'),
+        'librechat-data-provider': path.join(__dirname, 'packages/librechat-data-provider/src'),
       },
     },
   };

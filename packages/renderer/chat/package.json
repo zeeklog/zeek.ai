@@ -4,9 +4,10 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "install": "cd packages/librechat-data-provider && npm install && cd ../../ && npm install",
     "dev": "cross-env NODE_ENV=development vite",
     "build:file": "cross-env NODE_ENV=production vite build --debug > vite-output.log 2>&1",
-    "build": "cross-env NODE_ENV=production vite build",
+    "build": "cd packages/librechat-data-provider && npm run build && cd ../../ && cross-env NODE_ENV=production vite build",
     "build:ci": "cross-env NODE_ENV=development vite build --mode ci",
     "preview-prod": "cross-env NODE_ENV=development vite preview",
     "test": "cross-env NODE_ENV=development jest --watch",
